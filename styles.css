@@ -1,7 +1,6 @@
 /* Токены (дизайн-стайлгайд) */
 :root {
-    /* Палитра */
-    --color-bg: #fff;
+     --color-bg: #fff;
     --color-fg: #0b0b0b;
     --color-muted: #666;
     --color-primary: #0a84ff;
@@ -54,7 +53,9 @@ a:active { color: var(--color-danger); }
     outline-offset: 2px;
 }
 
-:disabled, [aria-disabled="true"] { opacity: 0.6; cursor: not-allowed; }
+:disabled, [aria-disabled="true"] { opacity: .6; cursor: not-allowed; 
+background-color: var(--color-muted);
+}
 
 html { scroll-behavior: smooth; }
 :target { outline: 2px dashed var(--color-primary); outline-offset: 4px; }
@@ -130,8 +131,6 @@ html { scroll-behavior: smooth; }
     gap: var(--space-1);
 }
 
-.breadcrumbs__item {}
-
 .breadcrumbs__link {
     color: var(--color-muted);
     text-decoration: none;
@@ -151,8 +150,7 @@ html { scroll-behavior: smooth; }
 }
 
 /* БЭМ: Форма и модалка */
-.form {}
-
+ 
 .form__label {
     display: block;
     margin: var(--space-2) 0 var(--space-1);
